@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f8fafc;
+}
+
+/* Header */
+.header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6366f1;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #6366f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sección tecnicas-estudio */
+
+.elegir-section {
+  background: white;
+  padding: 14rem 2rem 4rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sección tecnicas */
+.tecnicas {
+  background: white; /* Cambiado a blanco para que coincida con la imagen */
+  padding: 8rem 2rem 4rem 2rem;
+}
+
+.tecnicas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8rem 2rem 4rem 2rem;
+}
+
+/* Estilo para el icono (emoji) del libro */
+.tecnicas-container .📖 {
+  font-size: 3rem; /* Tamaño grande para el emoji */
+  margin-bottom: 0.5rem; /* Pequeño margen debajo del emoji */
+  color: #6366f1; /* Color similar al logo o resalte */
+}
+
+
+/* Título principal de la sección */
+.tecnicas-title {
+  font-size: 2.5rem; /* Tamaño de fuente para el título */
+  font-weight: bold;
+  color: #1e293b; /* Color oscuro para la primera parte del título */
+  margin-bottom: 1rem; /* Espacio debajo del título */
+  display: flex; /* Para centrar el texto con el icono */
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem; /* Espacio entre el icono y el texto */
+}
+
+/* Resaltar la parte del título en azul */
+.tecnicas-title .highlight {
+  color: #6366f1; /* Azul para la parte resaltada */
+}
+
+/* Nuevo subtítulo */
+.tecnicas-subtitle-new {
+  font-size: 1.25rem; /* Tamaño de fuente para el subtítulo */
+  color: #64748b; /* Color gris suave */
+  margin-top: 1rem; /* Espacio arriba del subtítulo, si es necesario */
+  margin-bottom: 3rem; /* Espacio debajo del subtítulo antes del siguiente contenido */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilo para el icono (emoji) del libro */
+.tecnicas-container h2:first-child { /* Apunta al primer h2 dentro de tecnicas-container, que es tu emoji */
+  font-size: 3rem; /* Tamaño grande para el emoji */
+  margin-bottom: 0.5rem; /* Pequeño margen debajo del emoji */
+  color: #6366f1; /* Color similar al logo o resalte */
+}
+
+/* Y si el título y el emoji no van juntos en el mismo <h2>: */
+.tecnicas-title {
+  /* ... tus estilos actuales para el título sin el icono ... */
+  display: block; /* O flex si aún lo necesitas para otra alineación */
+}
+
+/* Asegúrate de que este estilo exista si quieres que el icono del título sea un emoji.
+   Si en realidad quieres una imagen o un ícono de una librería (ej. FontAwesome),
+   la implementación sería diferente. Asumo que es un emoji por tu HTML.
+*/
+.tecnicas-title .icon { /* Si usas un elemento con clase 'icon' dentro del título */
+    font-size: 3rem;
+}
+
+/* Eliminar o comentar los estilos que no usas en esta sección para evitar conflictos */
+/*
+.tecnicas-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.tecnicas-intro-question {
+  font-size: 1.1rem;
+  color: #6366f1;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.tecnicas-intro-text {
+  font-size: 1rem;
+  color: #64748b;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+*/
+
+
+/* Sección tecnicas */
+.tecnicas {
+  background: #f8fafc;
+  padding: 8rem 2rem 4rem 2rem;
+}
+
+.tecnicas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tecnicas-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.tecnicas-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.tecnicas-intro-question {
+  font-size: 1.1rem;
+  color: #6366f1;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.tecnicas-intro-text {
+  font-size: 1rem;
+  color: #64748b;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+/* Intro */
+.tecnicas-intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tecnicas-title,
+.herramientas-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+  color: #1e293b;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.tecnicas-title .icon,
+.herramientas-title .icon {
+  font-size: 3rem;
+}
+
+.tecnicas-subtitle {
+  font-size: 1.2rem;
+  color: #6366f1;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.tecnicas-intro-question,
+.tecnicas-why,
+.tecnicas-how {
+  font-size: 1.3rem;
+  color: #3b82f6;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.tecnicas-intro-statement,
+.tecnicas-propuesta,
+.tecnicas-explanation {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Herramientas */
+.herramientas-section {
+  background: #f8fafc;
+  padding: 4rem 2rem;
+}
+
+.herramientas-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6366f1;
+  margin-bottom: 2rem;
+}
+
+.herramientas-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tecnicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tecnica-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.tecnica-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #6366f1;
+}
+
+.tecnica-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tecnica-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tecnica-title {
+  font-size: 1.4rem;
+  color: #1e293b;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tecnica-description {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tecnica-consejo {
+  font-size: 0.9rem;
+  color: #3b82f6;
+  background: #f1f5f9;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border-left: 4px solid #3b82f6;
+  font-weight: 500;
+}
+
+/* Cómo elegir */
+.elegir-title {
+  font-size: 2rem;
+  color: #1e293b;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.elegir-intro {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guias-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.guia-item {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #6366f1;
+  font-size: 1rem;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guia-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón */
+.cta-button-secondary {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cta-button-secondary:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Footer */
+.footer {
+    background: #1e293b;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3b82f6;
+}
+
+.footer-info {
+    text-align: center;
+    opacity: 0.8;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+}
+
+.scroll-top {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-top:hover {
+    background: #1d4ed8;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .tecnicas-title,
+  .herramientas-title {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .tecnicas-grid,
+  .guias-lista {
+    grid-template-columns: 1fr;
+  }
+}
